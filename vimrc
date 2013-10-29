@@ -1,4 +1,6 @@
 set nocompatible
+set fileencoding=utf-8
+set encoding=utf-8
 filetype off
 
 set rtp+=~/.vim/bundle/vundle
