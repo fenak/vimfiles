@@ -30,6 +30,7 @@ filetype plugin indent on " required!
 set laststatus=2
 set backupdir=/tmp
 set directory=/tmp
+syntax on
 
 " terminal colors
 set t_Co=256
