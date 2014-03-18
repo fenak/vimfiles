@@ -60,7 +60,7 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-h> <C-w>h
 map <C-l> <C-w>l
-map <F3> :NERDTreeToggle<CR>
+map <F2> :NERDTreeToggle<CR>
 nnoremap <leader><space> :noh<cr>
 nnoremap <leader>a :Ack<space>
 nnoremap <leader>w <C-w><C-v>
