@@ -48,7 +48,8 @@ set go-=L
 set go-=r
 set go-=m
 set number
-colorscheme molokai
+set background=dark
+colorscheme hemisu-transparent
 
 " mappings
 map <C-J> <C-w>j<C-w>_
