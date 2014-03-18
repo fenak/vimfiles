@@ -13,6 +13,7 @@ Bundle 'gmarik/vundle'
 " bundles
 " github
 Bundle 'bling/vim-airline'
+Bundle 'jnwhiteh/vim-golang'
 Bundle 'kien/ctrlp.vim'
 Bundle 'mileszs/ack.vim'
 Bundle 'nanotech/jellybeans.vim'
