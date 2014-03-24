@@ -50,7 +50,7 @@ let s:lightTan=        { "gui": "#ECE1C8", "cterm": "230" }
 if &background=="dark"
 	" Dark theme
 	" modified for transparency
-	let s:bg={ "gui": "none", "cterm": "none" }
+	let s:bg={ "gui": "NONE", "cterm": "NONE" }
 	let s:norm=s:almostWhite
 	let s:comment=s:middleDarkGrey
 	let s:dimmed=s:middleLightGrey
