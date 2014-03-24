@@ -44,9 +44,6 @@ set autoindent
 set list
 set listchars=tab:\ ¬,trail:.
 
-" colorscheme
-colorscheme hemisu-transparent
-
 " interface
 set background=dark
 set go-=T
@@ -54,6 +51,9 @@ set go-=L
 set go-=r
 set go-=m
 set number
+
+" colorscheme
+colorscheme hemisu-transparent
 
 " mappings
 map <C-J> <C-w>j<C-w>_
