@@ -29,10 +29,12 @@ Bundle 'bufexplorer.zip'
 filetype plugin indent on " required!
 
 " general config
+set autoread
 set laststatus=2
 set backupdir=/tmp
 set directory=/tmp
 syntax on
+autocmd CursorHold * checktime " hack for autoread
 
 " terminal colors
 set t_Co=256
