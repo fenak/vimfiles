@@ -68,7 +68,7 @@ colorscheme hemisu-custom
 
 " for ruby, autoindent with two spaces, always expand tabs
 autocmd FileType ruby,yaml,cucumber set ai sw=2 sts=2 et
-autocmd FileType eruby,html,javascript,sass set sw=4 ts=4 sts=4 noet
+autocmd FileType eruby,html,javascript,scss set sw=4 ts=4 sts=4 noet
 autocmd FileType python set sw=4 sts=4 et
 
 " mappings
