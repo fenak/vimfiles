@@ -5,10 +5,13 @@ syntax enable
 packadd fzf
 packadd fzf.vim
 packadd nerdtree
+packadd vim-airline
 
 let mapleader=","
 
 nnoremap <C-p> :GFiles<Cr>
+nnoremap <leader><C-p> :Files<Cr>
+nnoremap <leader>f :Rg<Cr>
 nnoremap <leader>% :sp<Cr>
 nnoremap <leader>w <C-w><C-v>
 

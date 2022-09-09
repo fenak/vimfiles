@@ -7,3 +7,6 @@
 [submodule "pack/vendor/opt/fzf.vim"]
 	path = pack/vendor/opt/fzf.vim
 	url = https://github.com/junegunn/fzf.vim.git
+[submodule "pack/vendor/opt/vim-airline"]
+	path = pack/vendor/opt/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
