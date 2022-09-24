@@ -20,6 +20,8 @@ packadd nerdtree
 packadd vim-airline
 packadd vim-noctu
 
+packadd vim-mustache-handlebars
+
 colorscheme noctu
 
 let mapleader=","

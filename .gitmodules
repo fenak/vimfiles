@@ -20,3 +20,6 @@
 [submodule "pack/vendor/opt/vim-noctu"]
 	path = pack/vendor/opt/vim-noctu
 	url = https://github.com/noahfrederick/vim-noctu.git
+[submodule "pack/vendor/opt/vim-mustache-handlebars"]
+	path = pack/vendor/opt/vim-mustache-handlebars
+	url = https://github.com/mustache/vim-mustache-handlebars.git
