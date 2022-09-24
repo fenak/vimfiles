@@ -24,11 +24,15 @@ packadd vim-mustache-handlebars
 
 colorscheme noctu
 
+if has('mouse')
+  set mouse=a
+endif
+
 let mapleader=","
-inoremap fd <Esc>
+inoremap fd <Esc>l
 
 nnoremap <C-p> :GFiles<Cr>
-nnoremap <leader><C-p> :Files<Cr>
+nnoremap <C-o> :Files<Cr>
 nnoremap <leader>f :Rg<Cr>
 nnoremap <leader>% :sp<Cr>
 nnoremap <leader>w <C-w><C-v>
@@ -37,6 +41,8 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
+
+nnoremap <leader>. :lcd %:p:h<CR>
 
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: There's always complete item selected by default, you may want to enable
@@ -95,8 +101,8 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 nmap <leader>rn <Plug>(coc-rename)
 
 " Formatting selected code.
-xmap <leader>f  <Plug>(coc-format-selected)
-nmap <leader>f  <Plug>(coc-format-selected)
+"xmap <leader>f  <Plug>(coc-format-selected)
+"nmap <leader>f  <Plug>(coc-format-selected)
 
 augroup mygroup
         autocmd!
