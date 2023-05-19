@@ -1,5 +1,7 @@
 set number
 
+set nocompatible
+
 set nobackup
 set nowritebackup
 
@@ -9,6 +11,11 @@ set timeoutlen=200
 set ttimeout
 set ttimeoutlen=50
 set updatetime=300
+
+set hlsearch
+set list
+set listchars=tab:»·,trail:·
+set scrolloff=16
 
 filetype plugin indent on
 syntax enable
@@ -20,6 +27,10 @@ packadd nerdtree
 packadd vim-airline
 packadd vim-noctu
 
+packadd vim-dispatch
+packadd vim-fugitive
+packadd vim-test
+
 packadd vim-mustache-handlebars
 
 colorscheme noctu
@@ -28,14 +39,18 @@ if has('mouse')
   set mouse=a
 endif
 
+let NERDTreeShowHidden=1
+
 let mapleader=","
 inoremap fd <Esc>l
 
 nnoremap <C-p> :GFiles<Cr>
-nnoremap <C-o> :Files<Cr>
+nnoremap <leader>, :Files<Cr>
 nnoremap <leader>f :Rg<Cr>
 nnoremap <leader>% :sp<Cr>
 nnoremap <leader>w <C-w><C-v>
+
+nnoremap <TAB> :NERDTreeToggle<Cr>
 
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
@@ -43,6 +58,14 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
 nnoremap <leader>. :lcd %:p:h<CR>
+
+" run tests
+let test#strategy = "dispatch"
+nnoremap <silent> <leader>t :TestNearest<CR>
+nnoremap <silent> <leader>T :TestFile<CR>
+nnoremap <silent> <leader>a :TestSuite<CR>
+nnoremap <silent> <leader>l :TestLast<CR>
+nnoremap <silent> <leader>g :TestVisit<CR>
 
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: There's always complete item selected by default, you may want to enable

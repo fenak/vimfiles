@@ -23,3 +23,12 @@
 [submodule "pack/vendor/opt/vim-mustache-handlebars"]
 	path = pack/vendor/opt/vim-mustache-handlebars
 	url = https://github.com/mustache/vim-mustache-handlebars.git
+[submodule "pack/vendor/opt/vim-fugitive"]
+	path = pack/vendor/opt/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "pack/vendor/opt/vim-test"]
+	path = pack/vendor/opt/vim-test
+	url = https://github.com/vim-test/vim-test.git
+[submodule "pack/vendor/opt/vim-dispatch"]
+	path = pack/vendor/opt/vim-dispatch
+	url = https://github.com/tpope/vim-dispatch.git
