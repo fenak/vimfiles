@@ -6,6 +6,7 @@ set nobackup
 set nowritebackup
 
 set autoindent
+set directory=$HOME/.vim/swapfiles
 set timeout
 set timeoutlen=200
 set ttimeout
@@ -14,7 +15,7 @@ set updatetime=300
 
 set hlsearch
 set list
-set listchars=tab:»·,trail:·
+set listchars=tab:┊\ 
 set scrolloff=16
 
 filetype plugin indent on
@@ -28,6 +29,7 @@ packadd vim-airline
 packadd vim-noctu
 
 packadd vim-dispatch
+packadd vim-gitgutter
 packadd vim-fugitive
 packadd vim-test
 
@@ -40,6 +42,7 @@ if has('mouse')
 endif
 
 let NERDTreeShowHidden=1
+nnoremap <TAB> :NERDTreeToggle<Cr>
 
 let mapleader=","
 inoremap fd <Esc>l
@@ -49,8 +52,6 @@ nnoremap <leader>, :Files<Cr>
 nnoremap <leader>f :Rg<Cr>
 nnoremap <leader>% :sp<Cr>
 nnoremap <leader>w <C-w><C-v>
-
-nnoremap <TAB> :NERDTreeToggle<Cr>
 
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k

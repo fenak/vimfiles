@@ -32,3 +32,6 @@
 [submodule "pack/vendor/opt/vim-dispatch"]
 	path = pack/vendor/opt/vim-dispatch
 	url = https://github.com/tpope/vim-dispatch.git
+[submodule "pack/vendor/opt/vim-gitgutter"]
+	path = pack/vendor/opt/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
