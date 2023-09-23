@@ -36,10 +36,20 @@ packadd vim-test
 packadd vim-mustache-handlebars
 
 colorscheme noctu
+" colors for coc inlay hints - LightSalmon3 = 173
+hi CocInlayHint guifg=Blue ctermfg=173
 
 if has('mouse')
   set mouse=a
 endif
+
+let g:coc_global_extensions = [
+        \'coc-go',
+        \'coc-pyright',
+        \'coc-rust-analyzer',
+        \'coc-tsserver',
+        \'coc-yaml',
+        \]
 
 let NERDTreeShowHidden=1
 nnoremap <TAB> :NERDTreeToggle<Cr>
@@ -206,3 +216,5 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+
+
