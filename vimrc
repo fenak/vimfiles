@@ -43,13 +43,12 @@ if has('mouse')
   set mouse=a
 endif
 
-let g:coc_config_home = "$HOME/.vim/"
 let g:coc_global_extensions = [
-        \'coc-go',
-        \'coc-pyright',
-        \'coc-rust-analyzer',
-        \'coc-tsserver',
-        \'coc-yaml',
+        \ 'coc-go',
+        \ 'coc-pyright',
+        \ 'coc-rust-analyzer',
+        \ 'coc-tsserver',
+        \ 'coc-yaml',
         \]
 
 let NERDTreeShowHidden=1
