@@ -43,6 +43,7 @@ if has('mouse')
   set mouse=a
 endif
 
+let g:coc_config_home = "$HOME/.vim/"
 let g:coc_global_extensions = [
         \'coc-go',
         \'coc-pyright',

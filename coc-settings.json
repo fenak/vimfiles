@@ -1,0 +1,18 @@
+{
+  "diagnostic.floatConfig": {
+    "rounded": true,
+    "border": true
+  },
+  "hover.floatConfig": {
+    "rounded": true,
+    "border": true
+  },
+  "signature.floatConfig": {
+    "rounded": true,
+    "border": true
+  },
+  "suggest.floatConfig": {
+    "rounded": true,
+    "border": true
+  },
+
