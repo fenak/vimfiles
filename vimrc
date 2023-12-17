@@ -35,7 +35,71 @@ packadd vim-test
 
 packadd vim-mustache-handlebars
 
-colorscheme noctu
+if has('nvim')
+  packadd kanagawa.nvim
+  packadd nvim-treesitter
+
+lua <<EOF
+  require('kanagawa').setup({
+      compile = false,             -- enable compiling the colorscheme
+      undercurl = true,            -- enable undercurls
+      commentStyle = { italic = true },
+      functionStyle = {},
+      keywordStyle = { italic = true},
+      statementStyle = { bold = true },
+      typeStyle = {},
+      transparent = true,         -- do not set background color
+      dimInactive = false,         -- dim inactive window `:h hl-NormalNC`
+      terminalColors = true,       -- define vim.g.terminal_color_{0,17}
+      colors = {                   -- add/modify theme and palette colors
+        palette = {},
+        theme = {
+          wave = {},
+          lotus = {},
+          dragon = {},
+          all = {
+            ui = {
+              bg_gutter = "none"
+            }     
+          },
+        },
+      },
+      overrides = function(colors) -- add/modify highlights
+          return {}
+      end,
+      theme = "wave",              -- Load "wave" theme when 'background' option is not set
+      background = {               -- map the value of 'background' option to a theme
+        dark = "wave",           -- try "dragon" !
+        light = "lotus"
+      },
+  })
+
+  require'nvim-treesitter.configs'.setup {
+    ensure_installed = {
+      "c",
+      "go",
+      "lua",
+      "query",
+      "rust",
+      "vim",
+      "vimdoc",
+    },
+    highlight = {
+      enable = true,
+      -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
+      -- Set this to `true` if you depend on 'syntax' being enabled (like for indentation).
+      -- Using this option may slow down your editor, and you may see some duplicate highlights.
+      -- Instead of true it can also be a list of languages
+      additional_vim_regex_highlighting = false,
+    },
+  }
+EOF
+
+  colorscheme kanagawa
+else
+  colorscheme noctu
+endif
+
 " colors for coc inlay hints - LightSalmon3 = 173
 hi CocInlayHint guifg=Blue ctermfg=173
 
